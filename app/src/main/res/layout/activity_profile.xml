@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/progreassBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#e7e7e7">
+
+        <ImageView
+            android:id="@+id/EditProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_edit_24"/>
+
+        <ImageView
+            android:id="@+id/UploadProfile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_check_24"
+            android:layout_alignParentEnd="true"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/DescProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/EditProfile"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/school"/>
+
+        <TextView
+            android:id="@+id/TvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Demo Yadav"
+            android:layout_toRightOf="@id/DescProfile"
+            android:layout_below="@+id/EditProfile"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="19dp"/>
+
+        <TextView
+            android:id="@+id/SeeProfileText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See your Profile"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/DescProfile"
+            android:layout_below="@+id/TvUserName"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="19dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

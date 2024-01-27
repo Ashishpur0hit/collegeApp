@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#e7e7e7"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfilePic"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/school"/>
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ProfilePic"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:text="Demo Yadav"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProfilePic"
+            android:layout_marginTop="20dp"
+            android:text="Alsa Hum Bhi rakhte hai Pehelwaan"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/Institute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caption"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="Institue Name"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/UploadedImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/school"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/Institute"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/UploadedImage"
+            app:cardBackgroundColor="@color/dark_green"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginStart="20dp"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:id="@+id/filledlike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+
+                android:visibility="visible"/>
+
+
+
+            <ImageView
+                android:id="@+id/like"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/like"
+                />
+
+            <TextView
+                android:id="@+id/by"
+                android:layout_toRightOf="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Liked by "/>
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_toRightOf="@+id/by"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text=""/>
+
+
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/text"
+                android:src="@drawable/share"/>
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:text="Share"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
